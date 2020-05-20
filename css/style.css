@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table {
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+    font-family: 'Noto Sans', sans-serif;
+    --head-color: #061539;
+    --first-content-color: #dbdbdb;
+    --second-content-color: #ececec;
+    --third-content-color: #f3f3f3;
+    --text-color: #726e6a;
+}
+
+table td, table th {
+    padding: 1rem 1.3rem;
+}
+
+thead span {
+    display: block;
+}
+
+thead span:nth-child(even) {
+    font-size: 2rem;
+    padding: 1.5rem 0 0.3rem;
+}
+
+thead > tr > th {
+    color: white;
+    font-size: 1.1rem;
+}
+
+thead > tr > th:first-child::first-letter {
+    text-transform: uppercase;
+}
+
+thead > tr > th:first-child {
+    background: var(--head-color);
+    opacity: 0.6;
+}
+thead > tr > th:nth-child(2) {
+    background: var(--head-color);
+    opacity: 0.7;
+}
+thead > tr > th:nth-child(3) {
+    background: var(--head-color);
+    opacity: 0.8;
+}
+thead > tr > th:nth-child(4) {
+    background: var(--head-color);
+    opacity: 0.9;
+}
+thead > tr > th:last-child {
+    background: var(--head-color);
+    opacity: 1;
+}
+
+tbody > tr > td {
+    text-align: center;
+}
+tbody > tr > td::first-letter {
+    text-transform: uppercase;
+}
+tbody > tr > td:first-child {
+    text-align: left;
+}
+
+tbody > tr:nth-child(odd) > td:nth-child(odd) {
+    background: var(--first-content-color);
+}
+tbody > tr:nth-child(even) > td:nth-child(odd), tbody > tr:nth-child(odd) > td:nth-child(even) {
+    background: var(--second-content-color);
+}
+tbody > tr:nth-child(even) > td:nth-child(even) {
+    background: var(--third-content-color);
+}
+
+tbody button {
+    padding: 0.5em 2em;
+    color: var(--text-color);
+    border: 1px solid #bcbcbc;
+    background: #d3d3d3;
+    text-transform: uppercase;
+    outline: none;
+    font-weight: bold;
+}
